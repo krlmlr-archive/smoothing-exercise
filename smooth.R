@@ -1,3 +1,7 @@
+#- echo=F
+library(knitr)
+opts_chunk$set(fig.width=16)
+
 #' Read input data
 rm(list=ls())
 dat <- read.table("~/Downloads/DataPoints_TargetFunction_Home.txt")
