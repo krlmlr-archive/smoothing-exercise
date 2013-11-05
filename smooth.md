@@ -47,9 +47,11 @@ dat.ss.df <- dat.ss$df
 ```
 
 
-From that, we estimate splines with the following degrees of freedom:
-13.3174, 26.6347, 39.9521, 53.2695, 66.5868, 79.9042, 93.2216, 106.5389, 119.8563, 133.1737
-Estimate and simulate, result is a data frame of the following form:
+From that, we estimate
+
+splines with the following degrees of freedom:
+26.6347, 53.2695, 79.9042, 106.5389, 133.1737
+. Estimate and simulate, result is a data frame of the following form:
 
 
 ```r
@@ -62,13 +64,13 @@ head(dat.sim)
 ```
 
 ```
-##       df       x      y   resid
-## 1  13.32 0.00000 0.6895 0.03544
-## 2  13.32 0.02778 0.6894 0.03509
-## 3  13.32 0.08333 0.6891 0.03439
-## 4  13.32 0.16667 0.6888 0.03334
-## 5  13.32 0.19444 0.6887 0.03300
-## 6  13.32 0.41667 0.6879 0.03025
+##       df       x      y    resid
+## 1  26.63 0.00000 0.6612 0.007205
+## 2  26.63 0.02778 0.6615 0.007197
+## 3  26.63 0.08333 0.6619 0.007180
+## 4  26.63 0.16667 0.6626 0.007155
+## 5  26.63 0.19444 0.6629 0.007153
+## 6  26.63 0.41667 0.6647 0.007134
 ```
 
 

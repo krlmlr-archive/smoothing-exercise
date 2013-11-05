@@ -15,10 +15,12 @@ nrow(dat)
 (dat.ss <- smooth.spline(dat))
 dat.ss.df <- dat.ss$df
 
-#' From that, we estimate splines with the following degrees of freedom:
-{{(dfs <- dat.ss.df * (1:10) * 0.1)}}
+#' From that, we estimate
+{{N <- 5}}
+#' splines with the following degrees of freedom:
+{{(dfs <- dat.ss.df * (1:N) / N)}}
 
-#' Estimate and simulate, result is a data frame of the following form:
+#' . Estimate and simulate, result is a data frame of the following form:
 library(plyr)
 ldply(
   setNames(dfs, format(dfs)),
